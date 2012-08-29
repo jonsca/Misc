@@ -31,6 +31,8 @@
                         else if(document.selection)
                             s = document.selection.createRange().text;
 			
+			console.log("There are "+s.length+" characters.");
+			
 			if (s.length > 0)
 			{
 			    var count = 0;
@@ -39,7 +41,7 @@
 			    	if (s[i] == '\n')
 			    		count++;
 			    }
-			    console.log("There are "+s.length+" characters.");
+			    
 			    alert("There are "+count+" lines.");
 			}
                         
