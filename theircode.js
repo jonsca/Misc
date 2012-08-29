@@ -30,8 +30,8 @@
                         
                         else if(document.selection)
                             s = document.selection.createRange().text;
-			
-			console.log("There are "+s.length+" characters.");
+			var str = "There are "+s.length+" characters.";
+			console.log(str);
 			
 			if (s.length > 0)
 			{
