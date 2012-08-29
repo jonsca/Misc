@@ -31,7 +31,7 @@
                         else if(document.selection)
                             s = document.selection.createRange().text;
 			var str = "There are "+s.length+" characters.";
-			console.log(str);
+			alert(str);
 			
 			if (s.length > 0)
 			{
