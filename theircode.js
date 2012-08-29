@@ -26,6 +26,7 @@
 			if(document.selection)
                             s = document.selection.createRange().text;
 			
+			alert(s.length);
 			
 			if (s.length > 0)
 			{
