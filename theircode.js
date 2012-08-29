@@ -24,7 +24,7 @@
 			// your JavaScript code goes here!
                         var s = ''
 			if(window.selection)
-                            s = window.selection.getRangeAt(0).toString();
+                            s = window.getSelection().getRangeAt(0).toString();
 			
 			alert(s.length);
 			
