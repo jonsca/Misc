@@ -39,7 +39,7 @@
 			    	if (s[i] == '\n')
 			    		count++;
 			    }
-			
+			    console.log("There are "+s.length+" characters.");
 			    alert("There are "+count+" lines.");
 			}
                         
