@@ -25,7 +25,7 @@
                         var str;
                         if(window.selection)
                         {  
-                            var s = window.getSelection()
+                            var s = window.getSelection();
                             str = s.getRangeAt(0).toString();
                         }
 			alert(str.length);
