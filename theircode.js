@@ -22,7 +22,16 @@
 	function initMyBookmarklet() {
 		(window.myBookmarklet = function() {
 			// your JavaScript code goes here!
-                        alert("The second");
+                        var s = ''
+			if (window.getSelection)
+			    s = window.getSelection();
+                        else if(document.getSelection)
+                            s = document.getSelection();
+                        
+                        else if(document.selection)
+                            s = document.selection.createRange().text;
+
+                        alert(s);
 		})();
 	}
 
