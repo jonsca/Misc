@@ -23,12 +23,10 @@
 		(window.myBookmarklet = function() {
 			// your JavaScript code goes here!
                         var str;
-                        if(window.selection)
-                        {  
-                            var s = window.getSelection();
+                        var s = window.getSelection();
                             alert(typeof(s));
                             str = s.getRangeAt(0).toString();
-                        }
+                        
 			alert(str.length);
 			
 			if (str.length > 0)
