@@ -22,18 +22,20 @@
 	function initMyBookmarklet() {
 		(window.myBookmarklet = function() {
 			// your JavaScript code goes here!
-                        var s = ''
-			if(window.selection)
-                            s = window.getSelection().getRangeAt(0).toString();
+                        var str;
+                        if(window.selection)
+                        {  
+                            var s = window.getSelection()
+                            str = s.getRangeAt(0).toString();
+                        }
+			alert(str.length);
 			
-			alert(s.length);
-			
-			if (s.length > 0)
+			if (str.length > 0)
 			{
 			    var count = 0;
-			    for (var i = 0;i<s.length;i++)
+			    for (var i = 0;i<str.length;i++)
 			    {
-			    	if (s[i] == '\n')
+			    	if (str[i] == '\n')
 			    		count++;
 			    }
 			    
