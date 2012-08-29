@@ -23,15 +23,9 @@
 		(window.myBookmarklet = function() {
 			// your JavaScript code goes here!
                         var s = ''
-			if (window.getSelection)
-			    s = window.getSelection();
-                        else if(document.getSelection)
-                            s = document.getSelection();
-                        
-                        else if(document.selection)
+			if(document.selection)
                             s = document.selection.createRange().text;
-			var str = "There are "+s.length+" characters.";
-			alert(str);
+			
 			
 			if (s.length > 0)
 			{
