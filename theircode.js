@@ -23,8 +23,8 @@
 		(window.myBookmarklet = function() {
 			// your JavaScript code goes here!
                         var s = ''
-			if(document.selection)
-                            s = document.selection.createRange().text;
+			if(window.selection)
+                            s = window.selection.getRangeAt(0).toString();
 			
 			alert(s.length);
 			
