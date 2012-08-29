@@ -30,8 +30,19 @@
                         
                         else if(document.selection)
                             s = document.selection.createRange().text;
-
-                        alert(s);
+			
+			if (s.length > 0)
+			{
+			    var count = 0;
+			    for (var i = 0;i<s.length;i++)
+			    {
+			    	if (s[i] == '\n')
+			    		count++;
+			    }
+			
+			    alert("There are "+count+" lines.");
+			}
+                        
 		})();
 	}
 
